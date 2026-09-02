@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0a6587"/>
+  <g transform="translate(9, 11) scale(0.23)">
+    <path d="M 16 114 V 16 H 42 L 76 62 L 110 16 H 184 V 40 H 152" stroke="#ffffff" stroke-width="8" stroke-linecap="square" fill="none"/>
+    <circle cx="147" cy="40" r="6" fill="#ffffff"/>
+    <path d="M 28 26 V 94" stroke="#ffffff" stroke-width="7" stroke-linecap="square" fill="none"/>
+    <circle cx="28" cy="99" r="6" fill="#ffffff"/>
+    <path d="M 40 106 V 56 L 68 94" stroke="#ffffff" stroke-width="7" stroke-linecap="square" fill="none"/>
+    <circle cx="40" cy="111" r="6" fill="#ffffff"/>
+    <path d="M 52 38 L 76 72 L 100 38" stroke="#ffffff" stroke-width="7" stroke-linecap="square" fill="none"/>
+    <circle cx="52" cy="38" r="5" fill="#ffffff"/>
+    <path d="M 76 78 V 110" stroke="#ffffff" stroke-width="7" stroke-linecap="square" fill="none"/>
+    <circle cx="76" cy="114" r="6" fill="#ffffff"/>
+    <path d="M 88 94 L 110 62 V 110" stroke="#ffffff" stroke-width="7" stroke-linecap="square" fill="none"/>
+    <circle cx="110" cy="114" r="6" fill="#ffffff"/>
+    <path d="M 124 54 H 168" stroke="#ffffff" stroke-width="7.5" stroke-linecap="square" fill="none"/>
+    <circle cx="173" cy="54" r="6" fill="#ffffff"/>
+    <path d="M 124 74 H 146 V 88 H 178" stroke="#ffffff" stroke-width="7" stroke-linecap="square" fill="none"/>
+    <circle cx="183" cy="88" r="6" fill="#ffffff"/>
+    <path d="M 16 114 H 56 M 96 114 H 184 V 94 H 152" stroke="#ffffff" stroke-width="8" stroke-linecap="square" fill="none"/>
+    <path d="M 134 102 H 168" stroke="#ffffff" stroke-width="6.5" stroke-linecap="square" fill="none"/>
+    <circle cx="130" cy="102" r="5.5" fill="#ffffff"/>
+  </g>
+</svg>

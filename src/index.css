@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    /* Modo Claro - Letras pretas profundas, alto contraste e legibilidade impecável */
+    --background: 214 47% 98%;          /* #F8FAFC Fundo claro e limpo */
+    --foreground: 222 47% 5%;           /* #070B14 Preto nítido e legível */
+    --card: 0 0% 100%;                  /* #FFFFFF Branco puro */
+    --card-foreground: 222 47% 5%;      /* #070B14 */
+    --primary: 224 64% 33%;             /* #1E3A8A Azul-marinho */
+    --primary-foreground: 210 40% 98%;  /* #F8FAFC */
+    --secondary: 214 32% 92%;           /* #E2E8F0 */
+    --secondary-foreground: 222 47% 5%;
+    --muted: 214 32% 94%;
+    --muted-foreground: 220 30% 20%;    /* #242d3d Preto carvão escuro para alta leitura */
+    --border: 214 25% 82%;              /* Linha bem visível */
+    --input: 214 25% 82%;
+    --ring: 38 92% 32%;
+    --gold: 38 92% 32%;                 /* #945305 */
+    --navy-deep: 224 64% 28%;           /* #162C6A */
+    --surface-elevated: 0 0% 100%;
+    --gradient-hero: radial-gradient(circle at 50% 0%, rgba(30, 58, 138, 0.08) 0%, rgba(248, 250, 252, 0) 70%);
+    --gradient-gold: linear-gradient(135deg, #B45309 0%, #D97706 50%, #92400E 100%);
+    --gradient-panel: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+    --shadow-soft: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+    --shadow-card: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.06);
+    --shadow-gold: 0 0 25px -3px rgba(180, 83, 9, 0.2);
+  }
+
+  .dark {
+    /* Modo Escuro (Padrão) */
+    --background: 223 58% 5%;           /* #050913 */
+    --foreground: 210 40% 98%;          /* #F8FAFC */
+    --card: 220 49% 8%;                 /* #0B1220 */
+    --card-foreground: 210 40% 98%;     /* #F8FAFC */
+    --primary: 224 64% 45%;             /* #2563EB */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 221 46% 12%;           /* #0F172A */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 221 42% 10%;
+    --muted-foreground: 218 19% 72%;    /* #AAB4C5 */
+    --border: 220 30% 16%;              /* Hairline 1px */
+    --input: 220 30% 16%;
+    --ring: 45 95% 54%;                 /* #FBBF24 Dourado */
+    --gold: 45 95% 54%;                 /* #FBBF24 Luminous Gold */
+    --navy-deep: 224 64% 33%;           /* #1E3A8A */
+    --surface-elevated: 221 46% 12%;    /* #111A2E */
+    --gradient-hero: radial-gradient(circle at 50% 0%, rgba(30, 58, 138, 0.28) 0%, rgba(5, 9, 19, 0) 70%);
+    --gradient-gold: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%);
+    --gradient-panel: linear-gradient(180deg, #0B1220 0%, #070D18 100%);
+    --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.6);
+    --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    --shadow-gold: 0 0 25px -3px rgba(245, 158, 11, 0.25);
+  }
+}
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-gold: hsl(var(--gold));
+  --color-navy-deep: hsl(var(--navy-deep));
+  --color-surface-elevated: hsl(var(--surface-elevated));
+  --color-brand: #0a6587;
+  --color-brand-dark: #07475f;
+  --color-brand-light: #38bdf8;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold) / 0.6);
+}
+
+/* Noise overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+}

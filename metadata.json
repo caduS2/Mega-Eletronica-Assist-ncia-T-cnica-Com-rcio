@@ -1,0 +1,6 @@
+{
+  "name": "Mega Eletronica",
+  "description": "Assistência técnica de eletrônicos com mais de 30 anos de experiência em São Bernardo do Campo. Serviço garantido e diagnóstico técnico especializado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
